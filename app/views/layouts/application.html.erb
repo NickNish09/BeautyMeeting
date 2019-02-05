@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Beauty Meeting</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= favicon_link_tag "img/core-img/favicon.ico"%>
+    <!-- Core Stylesheet -->
+    <%= stylesheet_link_tag "style.css" %>
+    <!-- Responsive CSS -->
+    <%= stylesheet_link_tag "css/responsive/responsive.css" %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+
+    <!-- Popper js -->
+    <%= javascript_include_tag"js/bootstrap/popper.min.js"%>
+    <!-- All Plugins js -->
+    <%= javascript_include_tag"js/others/plugins.js"%>
+    <!-- Active JS -->
+    <%= javascript_include_tag"js/active.js"%>
+  </body>
+</html>
