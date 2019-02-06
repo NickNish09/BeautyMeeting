@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21380d94-12a9-4f38-9d9a-612c2af57221" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/companies/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/companies/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/companies/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/companies/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-    </list>
+    <list default="true" id="21380d94-12a9-4f38-9d9a-612c2af57221" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -336,16 +330,15 @@
       <workItem from="1541784875380" duration="4426000" />
       <workItem from="1542371034679" duration="100000" />
       <workItem from="1549410974672" duration="5726000" />
-      <workItem from="1549459879459" duration="985000" />
+      <workItem from="1549459879459" duration="1169000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11237000" />
+    <option name="totallyTimeSpent" value="11421000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25965664" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
