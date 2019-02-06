@@ -20,20 +20,22 @@
       <% @companies.each do |company| %>
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="single-features-area mb-50">
-          <%= image_tag "img/bg-img/feature-1.jpg", class: "" %>
-          <!-- Price -->
-          <div class="price-start">
-            <p>A partir de R$59,90</p>
-          </div>
-          <div class="feature-content d-flex align-items-center justify-content-between">
-            <div class="feature-title">
-              <h5><%= company.name %></h5>
-              <p><%= company.description %></p>
+          <a href="<%= company_path(company) %>">
+            <%= image_tag "img/bg-img/feature-1.jpg", class: "" %>
+            <!-- Price -->
+            <div class="price-start">
+              <p>A partir de R$59,90</p>
             </div>
-            <div class="feature-favourite">
-              <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+            <div class="feature-content d-flex align-items-center justify-content-between">
+              <div class="feature-title">
+                <h5><%= company.name %></h5>
+                <p><%= company.description %></p>
+              </div>
+              <div class="feature-favourite">
+                <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <% end  %>
