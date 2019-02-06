@@ -1,34 +1,56 @@
-<h2>Sign up</h2>
+<%= stylesheet_link_tag "login" %>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+<div class="container">
+  <div class="d-flex justify-content-center h-100">
+    <div class="card">
+      <div class="card-header">
+        <h3>Cadastrar</h3>
+        <div class="d-flex justify-content-end social_icon">
+          <span><i class="fab fa-facebook-square"></i></span>
+          <span><i class="fab fa-google-plus-square"></i></span>
+          <span><i class="fab fa-twitter-square"></i></span>
+        </div>
+      </div>
+      <div class="card-body">
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+          <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+          <div class="input-group form-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-at"></i></span>
+            </div>
+            <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: "form-control" %>
+
+          </div>
+
+          <div class="input-group form-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-user"></i></span>
+            </div>
+            <%= f.text_field :name, autofocus: true, placeholder: "Nome da Prestadora", class: "form-control" %>
+          </div>
+
+          <div class="input-group form-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-lock"></i></span>
+            </div>
+            <%= f.password_field :password, autocomplete: "new-password", placeholder: "Senha", class: "form-control" %>
+          </div>
+
+          <div class="input-group form-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-lock"></i></span>
+            </div>
+            <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Confirmar Senha", class: "form-control" %>
+          </div>
+
+          <div class="actions">
+            <%= f.submit "Cadastrar", class: "btn float-right login_btn" %>
+          </div>
+        <% end %>
+
+        <%= render "devise/shared/links" %>
+      </div>
+    </div>
   </div>
-
-  <div class="field">
-    <%= f.label :nome_da_empresa %><br />
-    <%= f.text_field :name, autofocus: true %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</div>

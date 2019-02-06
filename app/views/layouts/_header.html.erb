@@ -45,6 +45,12 @@
               <a href="<%= new_company_session_path %>">Entrar ou Registrar-se</a>
             </div>
 
+            <% if company_signed_in? %>
+              <div class="dorne-signin-btn">
+                <%= link_to "Sair", destroy_company_session_path, method: :delete, class: "" %>
+              </div>
+            <% end %>
+
           </div>
         </nav>
       </div>
