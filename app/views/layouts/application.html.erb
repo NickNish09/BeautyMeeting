@@ -16,7 +16,9 @@
   </head>
 
   <body>
+    <%= render 'layouts/header' %>
     <%= yield %>
+    <%= render 'layouts/footer' %>
 
     <!-- Popper js -->
     <%= javascript_include_tag"js/bootstrap/popper.min.js"%>
